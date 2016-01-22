@@ -1,7 +1,7 @@
 /*
- * Copyright © exc-jdbi 2016
+ * Copyright Â© exc-jdbi 2016
  *
- * © mnBase64 2016
+ * Â© mnBase64 2016
  *
  * mnBase64 - www.github.com/exc-jdbi/base64
  *
@@ -63,7 +63,7 @@ namespace Garbage{
 		if(c){
 			vChar.resize(vChar.size()+1);
 			vChar[vChar.size()-1]=c;
-			iSize=vChar.size();
+			iSize++;
 			return true;
 		}
 		return false;
@@ -72,7 +72,7 @@ namespace Garbage{
 		if(wc){
 			vwChar.resize(vwChar.size()+1);
 			vwChar[vwChar.size()-1]=wc;
-			iSize=vwChar.size();
+			iSize++;
 			return true;
 		}
 		return false;
