@@ -1,7 +1,7 @@
 /*
- * Copyright © exc-jdbi 2016
+ * Copyright Â© exc-jdbi 2016
  *
- * © mnBase64 2016
+ * Â© mnBase64 2016
  *
  * mnBase64 - www.github.com/exc-jdbi/base64
  *
@@ -372,7 +372,7 @@ int myBase64::pEnc(const char *const plain,const int &iLen,const char **ppOut){
 				int iCorrectLen=((iLen+2-((iLen+2)%3))/3)*4;
 				memset(&pOut[iCorrectLen],0,iB64Len-iCorrectLen);
 				*ppOut=pOut;
-				ret=offset;
+				ret=iCorrectLen;
 			}			
 		}
 		return ret;
