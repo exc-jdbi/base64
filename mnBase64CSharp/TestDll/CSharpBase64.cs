@@ -7,7 +7,6 @@
  *
  * mnBase64 is Free and Opensource Software
 */
-
 using System;
 using System.Linq;
 using System.Text;
