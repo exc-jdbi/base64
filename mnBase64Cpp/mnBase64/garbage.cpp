@@ -55,7 +55,7 @@ namespace Garbage{
 		if (singleInstance!=0)
 			delete singleInstance;
 		singleInstance=0;
-		if(singleInstance=0)return true;
+		if(singleInstance==0)return true;
 		return false;
 	}
 	int myGarbage::getSize(){return iSize;}
@@ -92,6 +92,7 @@ namespace Garbage{
 					}
 				}
 				vChar.resize(vChar.size()-1);
+				iSize--;
 			}
 		}
 		if(vwChar.size()>0){
@@ -108,6 +109,7 @@ namespace Garbage{
 					}
 				}
 				vwChar.resize(vwChar.size()-1);
+				iSize--;
 			}
 		}
 		return true;

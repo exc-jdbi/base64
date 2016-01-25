@@ -28,8 +28,7 @@ namespace TestDll
         }
         public string EncodeB64(string sStr, bool _utf8 = false)
         {
-            string functionReturnValue = null;
-            functionReturnValue = string.Empty;
+            string ret = string.Empty;
             IntPtr ptr1 = IntPtr.Zero;
             IntPtr ptr2 = IntPtr.Zero;
 
@@ -73,12 +72,11 @@ namespace TestDll
                 Marshal.FreeHGlobal(ptr1);
                 Marshal.FreeHGlobal(ptr2);
             }
-            return functionReturnValue;
+            return ret;
         }
         public string DecodeB64(string sStr, bool _utf8 = false)
         {
-            string functionReturnValue = null;
-            functionReturnValue = string.Empty;
+            string ret = string.Empty;
             IntPtr ptr1 = IntPtr.Zero;
             IntPtr ptr2 = IntPtr.Zero;
 
@@ -122,7 +120,7 @@ namespace TestDll
                 Marshal.FreeHGlobal(ptr1);
                 Marshal.FreeHGlobal(ptr2);
             }
-            return functionReturnValue;
+            return ret;
         }
         private abstract class dll
         {
